@@ -10,5 +10,8 @@
     "express": "^4.17.1",
     "express-session": "^1.17.2",
     "mongoose": "^5.13.2"
+  },
+  "scripts": {
+    "start": "node index.js"
   }
 }
