@@ -1,0 +1,316 @@
+
+
+@font-face {
+    font-family: "Golos";
+    src: url("Golos-Text_Regular.woff");
+}
+
+body {
+    margin: 0;
+    font-family: Golos;
+}
+
+.welcome{
+    min-height: calc( 100vh - 88px);
+    background: url("rectangle65.png") no-repeat;
+    display: flex;
+    background-size:cover ;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px;
+    position: relative;
+}
+button {
+    cursor: pointer;
+    border: none;
+}
+.welcome img{
+    position: absolute;
+    top: 63% ;
+    left: 82%;
+    box-sizing: border-box;
+    width: 174px;
+    height: 174px;
+}
+.welcome .text{
+    font-family: Golos;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 43px;
+width: 50%;
+color:#fff;
+}
+.welcome .text span{
+    color: #FFDE59;
+}
+
+
+
+
+.why-us .container .title{
+    font-family: Golos;
+font-style: normal;
+font-weight: 600;
+font-size: 56px;
+line-height: 67px;
+
+text-align: center;
+
+color: #5D6475;
+}
+
+.why-us{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 80vh;
+    margin: 70px 0;
+}
+
+
+.why-us .container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.why-us .container .cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.why-us .container .cards .card{
+    height: 370px;
+    width: 360px;
+    background: #FFFFFF;
+box-shadow: 5px 5px 10px rgba(224, 224, 224, 0.2), -5px -5px 10px rgba(224, 224, 224, 0.2), 5px -5px 10px rgba(255, 255, 255, 0.9), -5px 5px 13px rgba(224, 224, 224, 0.9);
+border-radius: 10px;
+padding: 30px 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+}
+
+.why-us .container .cards .card .card-title{
+    font-family: Golos;
+font-style: normal;
+font-weight: 600;
+font-size: 26px;
+line-height: 31px;
+
+text-align: center;
+
+color: #479D83;
+}
+
+.why-us .container .cards .card .card-des{
+font-family: Golos;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+
+/* Black */
+
+color: #292929;
+}
+
+
+.form-container{
+    width: 100%;
+    min-height: 100vh;
+    background: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.form-container .form{
+    width: 570px;
+    height: 276px;
+    background: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #FFFFFF;
+box-shadow: 5px 5px 10px rgba(224, 224, 224, 0.2), -5px -5px 10px rgba(224, 224, 224, 0.2), 5px -5px 10px rgba(255, 255, 255, 0.9), -5px 5px 13px rgba(224, 224, 224, 0.9);
+border-radius: 10px;
+}
+
+.form-container .form .form-title{
+    font-family: Golos;
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 38px;
+
+/* Black */
+
+color: #292929;
+
+}
+
+.form-container .form .form-des{
+    font-family: Golos;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+
+color: #5D6475;
+
+
+}
+.form-container .form .form-btn{
+width: 365px;
+height: 48px;
+left: 0px;
+top: 64px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+background: #479D83;
+border-radius: 10px;
+
+font-family: Golos;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+text-align: center;
+
+/* White */
+
+color: #FFFFFF;
+
+}
+
+.form-container .form input{
+    box-sizing: border-box;
+    width: 365px;
+height: 48px;
+
+border: 1px solid #bbbbbb;
+outline: none;
+display: flex;
+align-items: center;
+justify-content: center;
+
+background: #fff;
+border-radius: 10px;
+
+font-family: Golos;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: rgba(0, 0, 0, 0.3);
+padding: 15px;
+
+/* White */
+
+color: #000;
+margin: 15px 0;
+}
+
+@media screen and (max-width:986px) {
+    .welcome img{
+        left:80%;
+        width: 100px;
+        height: 100px;
+        top: 70%;
+    }
+}
+
+@media screen and (max-width:827px) {
+    .welcome img{
+        display: none;
+    }
+    .welcome .text{
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width:959px) {
+    .why-us .cards{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .why-us .card{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:433px) {
+    .why-us .card{
+        width: 300px;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .form-container {
+        height: 100%;
+    }
+    .form-container .form{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .form-container {
+        height: 100%;
+        background: #F5F5F5;
+    }
+    .form-container .form{
+        width: 90%;
+    }
+    .form-container .form input, .form-container .form .form-btn{
+        width: 90%;
+    }
+    .form-container .form{
+        height: 120%;
+    }
+    .form-container .form .form-title, .form-container .form .form-des{
+        font-size: 22px;
+        text-align: center;
+    }
+}
+@media screen and (max-width:813px) {
+    .footer .grid {
+        grid-template-columns: 2fr 1fr ;
+        grid-template-rows: 3fr 3fr;
+        grid-row-gap: 20px;
+    }
+    .mini-des{
+        display: none;
+    }
+}
+
+@media screen and (max-width:531px) {
+
+    .welcome .text{
+        font-size: 22px;
+    }
+}

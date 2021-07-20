@@ -1,0 +1,259 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+header{
+    width: 100%;
+    min-height: 88px;
+    background: #FCFCFC;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 30px ;
+}
+header .logo{
+    display: flex;
+    align-items: center;
+}
+header h2 {
+    margin-left: 15px;
+    color: #5D6475;
+}
+
+.link-title{
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 160%;
+/* or 26px */
+
+text-align: center;
+
+/* Black */
+
+color: #292929;
+
+}
+
+.link-des{
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 160%;
+/* or 26px */
+
+text-align: center;
+
+/* Black */
+
+color: #292929;
+
+}
+
+.nav{
+    display: flex;
+    gap: 20px;
+}
+
+
+.sign-up{
+width: 90px;
+height: 32px;
+
+/* Green */
+
+background: #479D83;
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.log-in{
+    border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 90px;
+height: 32px;
+}
+.sign-up span{
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 14px;
+text-align: center;
+
+/* White */
+
+color: #FFFFFF;
+
+
+}
+
+.log-in span{
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+text-align: center;
+
+/* Green */
+
+color: #479D83;
+
+}
+
+.auth{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+
+
+.footer{
+    width: 100%;
+    min-height: 317px;   
+    background: #479D83; 
+    padding: 30px;
+}
+.footer .flex{
+    display: flex;
+    align-items: flex-end;
+}
+.footer .grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    grid-row-gap: 20px;
+}
+
+.title-container .title{
+    font-family: Roboto;
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+line-height: 35px;
+/* identical to box height, or 140% */
+
+
+/* White */
+
+color: #FFFFFF;
+}
+.title-container .des{
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 10px;
+line-height: 15px;
+/* or 150% */
+
+
+color: #FFFFFF;
+}
+
+.title-container{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.mini-card{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.mini-card .title{
+    font-family: Roboto;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 27px;
+/* identical to box height, or 169% */
+
+
+color: #FFFFFF;
+
+}
+
+.mini-card .link{
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 28px;
+/* identical to box height, or 233% */
+
+
+color: #FFFFFF;
+}
+
+@media screen and (max-width:956px) {
+    .icons{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:813px) {
+    .footer .grid {
+        grid-template-columns: 2fr 1fr ;
+        grid-template-rows: 3fr 3fr;
+        grid-row-gap: 20px;
+    }
+    .mini-des{
+        display: none;
+    }
+}
+
+@media screen and (max-width:531px) {
+    .footer .grid {
+        grid-template-columns:  1fr ;
+        grid-row-gap: 20px;
+    }
+    .mini-des{
+        display: none;
+    }
+    .welcome .text{
+        font-size: 22px;
+    }
+}
+
+
+@media screen and (max-width:521px) {
+    .title{
+        font-size: 24px;
+    }
+    .footer .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1fr , 4);
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+    .nav{
+        display: none;
+    }
+    .burger{
+        display: flex;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .amodoc{
+        display: none;
+    }
+}

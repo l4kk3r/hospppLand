@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300&display=swap');
+    </style>
+    <link rel="stylesheet" type="text/css" href="/main.css">
+    <link rel="stylesheet" type="text/css" href="/header.css">
+</head>
+<body>
+    <script>
+        window.onload = function () {
+            var sent = <%= sent %>;
+            var error = <%= error %>
+            if (sent) {
+                var el = document.getElementById('lidForm')
+                el.scrollIntoView(true)
+            }
+            if (error) {
+                var errorMsg = document.getElementById('errorMsg')
+                errorMsg.innerHTML = error
+                var el = document.getElementById('lidForm')
+                el.scrollIntoView(true)
+            }
+        }
+    </script>      
+    <header>
+        <div class="logo">
+          <img src="logo1.png" alt="" />
+          <h2>Amo<span style="color: #479D83">doc</span>.com</h2>
+        </div>
+    </header>
+        
+    <div class="welcome">
+    <div class="text">
+        <span>Amodoc</span> is an online booking platform that helps to find a specialist doctor nearby or hospital and make an appointment, diagnostics or treatments.
+    </div>
+    <img src="/logo.png" alt="" />
+    </div>
+
+    <div class="why-us">
+        <div class="container">
+            <div class="title">Why us?</div>
+
+            <div class="cards">
+                <div class="card">
+                    <img src="group.png" alt="" />
+                    <div class="card-title">It’s cheaper</div>
+                    <div class="card-des">We believe that medical treatment should be affordable for everyone. By using our service you save up to 30%.</div>
+                </div>
+
+                <div class="card">
+                    <img src="group1.png" alt=""/>
+                    <div class="card-title">More options</div>
+                    <div class="card-des">Our service has a lot of useful features and we constantly implementing new ones.</div>
+                </div>
+
+                <div class="card">
+                    <img src="layer2.png" alt=""/>
+                    <div class="card-title">Friendly interface</div>
+                    <div class="card-des">Since our clients represent different age groups we’ve built a simple and empathic interface.</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="lidForm" class="form-container">
+        <form action="/" method="POST" class="form">
+            <% if (sent) {%>
+                <h2 style="color: #479D83">Thank you!</h2>
+                <h3 style="text-align: center;">We will keep you informed about our product</h3 style="text-align: center;">
+            <% } else { %>
+                <h4 id='errorMsg'></h4>
+                <div class="form-title">
+                    Leave us your e-mail
+                </div>
+                <div class="form-des">
+                    and we’ll provide you with full information
+                </div>
+
+                <input name="email" placeholder="E-mail" type="text" />
+
+                <button type="submit" class="form-btn">Submit</button>
+            <% } %>
+        </form>
+    </div>
+</body>
+</html>
